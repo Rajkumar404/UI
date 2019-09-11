@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Raj drop-down navbar</title>
+<style>
+body{
+   background-image:url('amazon.jpg');
+   background-size: cover;
+   font-family: italic;
+   font-size: 20px;
+   margin:0;
+   line-height:24px;
+   
+}
+.navbar{
+  text-align:center;
+  width:100%;
+  background-color:red;
+  opacity:0.5;
+}
+.navbar ul {
+  margin:0;
+  padding:0;
+  list-style:none;
+  position-relative;
+}
+.navbar ul li a{
+  display:block;
+  padding:25px;
+  color:white;
+  text-decoration:none;
+  width:150px;
+}
+.navbar ul: after{
+  content: ""; clear: both;
+  display:block;
+}
+.navbar ul li{
+  float:left;
+  list-style:none; 
+}
+.navbar ul ul {
+  display:none;
+}
+.navbar ul li:hover > ul{
+   display:block;
+}
+.navbar ul li:hover{
+  background:blue;
+  transition:0.3s;
+}
+.navbar ul li:hover a{
+  color:white;
+}
+.navbar ul ul {
+  background:black;
+  padding:0;
+  margin:0;
+  position:absolute; top:100%;
+}
+.navbar ul ul li{
+  float:none;
+  position:relative;
+}
+.navbar ul ul li a{
+  padding:25px;
+  color:white;
+  width:350px;
+  text-align:left;
+}
+.navbar ul ul li a:hover{
+  background:lightblack;
+  color: black;
+  transition:0.3s;
+}
+
+</style>
+</head>
+<body>
+   <div Class ="navbar">
+   <ul>
+   <li><a href = "#">Home</a></li>
+   <li><a href = "#">Menu</a>
+         <ul>
+		 <li><a href = "#">Mobiles</a></li>
+		 <li><a href = "#">computer</a></li>
+		 <li><a href = "#">TV</a></li>
+		 <li><a href = "#">Mens fashion</a></li>
+		 <li><a href = "#">Womens fashion</a></li>
+		 <li><a href = "#">Sports</a></li>
+		 <li><a href = "#">Toys</a></li>	
+		 </ul>
+   </li>
+   <li><a href = "#">AmazonSeller</a>
+   
+         <ul>
+		 <li><a href = "#">APP for Android</a></li>
+		 <li><a href = "#">Beauty</a></li>
+		 <li><a href = "#">Books</a></li>
+		 <li><a href = "#">car</a></li>
+		 <li><a href = "#">jewellery</a></li>
+		 <li><a href = "#">shoes</a></li>
+		 </ul>
+   </li>
+   <li><a href = "#">News</a></li>
+   <li><a href = "#">Contact</a></li>
+   </ul>
+  </div>
+  </body>
+  </html>
